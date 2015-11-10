@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+
+<form class="pure-form" ng-submit="sendChar(char)">
+  <input required type="text" ng-model="char" placeholder="Ecrivez une lettre">
+  <button class="pure-button" type="submit">Envoyer</button>
+</form>
+
+<h2 ng-show="status">Game status : {{status}}</h2>
+
+<p ng-show="found">Mot trouvé : {{found}}</p>
+<p ng-show="found">Taille : {{found.length}}</p>
+
+<img class="pure-img" ng-src="{{image}}">
